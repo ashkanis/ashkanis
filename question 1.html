@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>question 1</p>
+        <p> lets reverse it!!!</p>
+        <textarea name="textbox" id="we" cols="30x" rows="10px"></textarea>
+    <button onclick="search()">reverse</button>
+    <p id="k"></p>
+        <script>
+            function search(){
+            const d = document.getElementById("we").value;
+            s = d.split(" ");
+            temp = "";
+            for (var i = s.length - 1 ; i >= 0; i--) {
+                temp += s[i];
+            }
+            
+            document.getElementById("k").innerHTML= temp;}
+        </script>
+    </body>
+</html>
